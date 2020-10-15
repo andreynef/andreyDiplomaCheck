@@ -1,0 +1,17 @@
+.previewContainerButton {
+    height: 300px;
+    margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+}
+
+.previewContainerButton:hover{
+    cursor: pointer;
+}
+
+.previewImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

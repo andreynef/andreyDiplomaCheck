@@ -1,0 +1,31 @@
+.infoContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    /*justify-content: space-evenly;*/
+    padding: 10px;
+}
+
+.metaContainer {
+    /*display: flex;*/
+    /*flex-flow: row nowrap;*/
+    /*justify-content: space-between;*/
+    /*margin: 0 0 4px 0;*/
+}
+
+.titleContainer {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    padding: 0;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    /*-webkit-line-clamp: 2;!*строка с 3мя точками вконце*!*/
+    /*-webkit-box-orient: vertical;*/
+    /*display: -webkit-box;*/
+    color: black;
+    border: 1px solid red;
+}
+
+.titleContainer:hover {
+    color: orange;
+}

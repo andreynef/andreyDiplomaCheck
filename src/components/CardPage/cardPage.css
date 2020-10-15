@@ -1,0 +1,166 @@
+.cardPage {
+    background-color: rgba(0,0,0,0.7);
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.centralContainer {
+    max-width: 1024px;
+    width: 80%;
+    /*min-width: 50%;*/
+    height: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.imageContainer {
+    overflow: hidden;
+    width:80%;
+    /*min-width:300px;*/
+}
+
+.imageContainer img {
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    margin:auto 0;
+    display: block;
+}
+
+.infoContainer {
+    width: 20%;
+    /*min-width: 20%;*/
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.metaContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.authorContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.createdAt {
+    color: #999999;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.avatarImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.avatarText {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+
+
+.likesContainer {
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #f4f4f4;
+
+}
+.likesValue {
+    color: #999999;
+}
+
+.button {
+    background-color: transparent;
+    align-items: center;
+    margin-left:10px;
+    border:none;
+}
+
+.button:hover {
+    cursor:pointer;
+}
+
+.exitButton {
+    position: absolute;
+    top:30px;
+    right:30px;
+    /*height: 300px;*/
+    /*margin:0;*/
+    /*padding:0;*/
+    /*border:none;*/
+    /*outline:none;*/
+    /*background-color: transparent;*/
+}
+
+.exitButton:hover {
+    cursor: pointer;
+}
+
+.exitImgWhite{
+    width: 30px;
+}
+
+
+.errorContainer {
+    margin-left:10px;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.errorValue {
+    color: red;
+    font-size: 12px;
+    padding:0;
+    margin:0;
+}
+
+@media all and (max-width: 1024px) {
+    .imageContainer{
+        width: 70%;
+    }
+    .infoContainer {
+        width: 30%;
+    }
+}
+@media all and (max-width: 760px) {
+    .centralContainer {
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+    .imageContainer{
+        width: 100%;
+    }
+    .infoContainer {
+        width: 100%;
+    }
+
+    /*.exitImgBlack{*/
+    /*    width: 20px;*/
+    /*    display:none;*/
+    /*}*/
+
+    /*.exitImgWhite{*/
+    /*    width: 20px;*/
+    /*    display: unset;*/
+    /*}*/
+
+}

@@ -1,0 +1,44 @@
+.mainContainer {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin:0;
+    padding: 20px 10px;
+    font-family: Roboto;
+}
+.centralContainer {
+    max-width: 1024px;
+}
+.cardList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin:0;
+    padding: 0;
+}
+
+.loader {
+    width:100px;
+    position:absolute;
+    top:48%;
+    left:47%;
+}
+.button {
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    padding:10px;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+
+@media all and (min-width: 1024px) {
+}
+
+@media all and (min-width: 1540px) {
+}

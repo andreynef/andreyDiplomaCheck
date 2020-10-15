@@ -1,0 +1,187 @@
+.card {
+    background-color: darkgrey;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5) ;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 0 20px 0;
+    /*position: relative;!*for exit button*!*/
+    width: 32%;
+    min-height:390px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    /*justify-content: space-evenly;*/
+    padding: 10px;
+}
+
+.metaContainer {
+    /*display: flex;*/
+    /*flex-flow: row nowrap;*/
+    /*justify-content: space-between;*/
+    /*margin: 0 0 4px 0;*/
+}
+
+.titleContainer {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    padding: 0;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    /*-webkit-line-clamp: 2;!*строка с 3мя точками вконце*!*/
+    /*-webkit-box-orient: vertical;*/
+    /*display: -webkit-box;*/
+    color: black;
+    border: 1px solid red;
+}
+
+.titleContainer:hover {
+    color: orange;
+}
+
+.loadMoreContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+
+.loadMoreContainer:hover {
+    cursor:pointer;
+    color:orange;
+}
+
+.loadMoreContainer:hover span{
+    color:orange;
+}
+
+.loadMoreText {
+    color:white;
+    font-size: 20px;
+    font-family: Roboto;
+}
+.loader {
+    margin: 200px;
+    width:100px;
+}
+.metaData {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 16px;
+    /*width: 100%;*/
+}
+
+.userLink {
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+    color: black;
+}
+
+.avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-right: 7px;
+    background-color: #999999;
+}
+
+.userName{
+    color: white;
+    width:70px;
+    background-color: darkgrey;
+    height: 16px;
+}
+
+
+.createdAt {
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    width:70px;
+    height:16px;
+}
+
+.previewContainerButton {
+    height: 300px;
+    width:100%;
+    margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+    background-color: lightgrey;
+}
+
+.previewImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+.controlsContainer {
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.likesContainer {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /*width: 50px;*/
+
+}
+.likesValue {
+    widht:20px;
+    height:16px;
+}
+
+.errorContainer {
+    margin-left:10px;
+}
+
+.errorValue {
+    color: red;
+    font-size: 12px;
+}
+
+.loader {
+    width:100px;
+    position:absolute;
+    top:45%;
+    left:45%;
+}
+
+.buttonHeart {
+    background-color: transparent;
+    align-items: center;
+    margin-left:10px;
+    border:none;
+    outline: none;
+}
+
+@media all and (max-width: 1024px) {
+    .card {
+        width: 49%;
+    }
+}
+@media all and (max-width: 763px) {
+    .card {
+        width: 100%;
+    }
+}
+

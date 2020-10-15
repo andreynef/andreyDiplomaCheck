@@ -1,0 +1,45 @@
+.controlsContainer {
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.likesContainer {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /*width: 50px;*/
+
+}
+.likesValue {
+    color: white;
+}
+
+.errorContainer {
+    margin-left:10px;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.errorValue {
+    color: red;
+    font-size: 12px;
+    padding:0;
+    margin:0;
+}
+
+
+
+.button {
+    background-color: transparent;
+    align-items: center;
+    margin-left:10px;
+    border:none;
+    outline: none;
+}
+
+.button:hover {
+    cursor:pointer;
+}

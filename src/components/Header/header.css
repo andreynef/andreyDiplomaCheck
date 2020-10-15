@@ -1,0 +1,87 @@
+.headerContainer {
+    background-color: white;
+    padding:10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    border-bottom: 1px solid lightgrey;
+    font-family: Roboto;
+    font-size: 20px;
+    position:sticky;
+}
+
+.centralContainer {
+    width:100%;
+    max-width: 1024px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.logoContainer{
+    width:50px;
+    margin-right: 10px;
+}
+
+.logoContainer img{
+    width:100%;
+}
+
+/*.authButtonContainer {*/
+/*    align-items: center;*/
+/*    display: flex;*/
+/*}*/
+
+.button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding:0;
+}
+
+.button:active {
+    outline: none;
+    border: none;
+}
+.userContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.avatarImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.avatarText {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-family: Roboto;
+    font-size: 20px;
+}
+.avatarText:hover{
+    color: orange;
+    cursor: pointer;
+}
+.logoutText {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    font-family: Roboto;
+    font-size: 14px;
+}
+.logoutText:hover{
+    color: orange;
+}
+
+
+
+@media all and (max-width: 1024px) {
+    .headerContainer {
+        padding:10px 20px;
+    }
+}
